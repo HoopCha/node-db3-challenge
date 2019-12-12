@@ -13,7 +13,7 @@ select o.Id, s.CompanyName
 from [Order] as o
 join Shipper as s
 on o.ShipVia = s.Id
-where o.OrderDate < Datetime('2012-08-08 23:59:59')
+where o.OrderDate < Datetime('2012-08-08')
 
 -- Display the name and quantity of the products ordered in order with Id 10251. Sort by ProductName. Shows 3 records.
 select p.ProductName, p.QuantityPerUnit, o.Quantity
